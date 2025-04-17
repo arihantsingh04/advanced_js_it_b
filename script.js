@@ -155,3 +155,86 @@
 // }
 // confuseReader();
 // console.log("outside",x);
+
+//***********************invoking anonymous function**************** */
+// (function (){
+//     console.log('IIFE!');
+// })();
+// ****************arrow functions**********************
+// (()=>{
+//     console.log("run right away!");
+// })();
+
+//************************Recursion*********************** */
+// function getRecursive(nr){
+//     if
+//     (nr > 0){
+//     getRecursive(--nr);
+//     }
+//     console.log(nr);
+
+
+// }
+// getRecursive(3);
+
+// *******************recursion with console at start***************
+// function getRecursive(nr){
+//     console.log(nr);
+//     if
+//     (nr > 0){
+//     getRecursive(--nr);
+//     }
+
+// }
+// getRecursive(3);
+
+// ****************************************************
+// function logRec(nr){
+//     console.log("started func:", nr);
+//     if (nr > 0){
+//         logRec(nr-1);
+//     }
+//     else{
+//         console.log("done!");
+//     }
+//     console.log("ended func:", nr);
+// }
+// logRec(3);
+
+// ********************NESTED FUNCTION***********************
+// function dof(nr){
+//     console.log("outer func.");
+//     dif(nr);
+//     function dif(x){
+//         console.log(x+7);
+//         console.log("i can access outer variables!",nr);
+//     }
+// }
+// dof(2);
+
+// ***************ERROR****************
+// function dof(nr){
+//     dif(nr);
+//     function dif(x){
+//         let x=10;
+//     }
+// }
+// dof(2);
+
+
+// let fv=function(){
+//     console.log("not so secret though.");
+// }
+// function dfs(es){
+//     es();
+//     console.log("inside dfs");
+// }
+// dfs(fv);
+
+// **********************TIMEOUT********************
+// let ygt=function(){
+//     console.log("you're doing really well, keep coding!");
+// };
+// setInterval(ygt, 2050);
+// // setTimeout(ygt, 2050);
+
